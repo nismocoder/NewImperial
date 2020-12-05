@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakuraaa</title>
+    
+    <script src="https://kit.fontawesome.com/044137398e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+
+
+
+       <style>
+    
+
+
+   .grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+      grid-template-areas:
+      "nav nav"
+      "content content"
+      "footer footer";
+}
+
+
+@media only screen and (max-width:550px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows:1.0 fr 3.2 fr 1 fr;
+    grid-template-areas:
+    "nav"
+    "content"
+    "footer";
+  }
+}
+
+
+
+.nav {
+  grid-area: nav;
+}
+
+
+
+
+.content {
+grid-area: content;
+background: url(assets/images/sakurafolder/sakura1.jpg);
+  height: 800px;
+  width: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+
+.footer{
+                grid-area: footer;
+                   display: flex;
+                   background-color:grey;
+                   height:50px;
+                   display:flex;
+                   flex-direction: row;
+      }
+
+
+
+
+/* -------- TOP MENU BAR --------  */
+
+.nav-main {
+        width: 100%;
+        height: 50px;
+        top:0;
+        position:fixed;
+        background-color: #fff;
+        display:flex;
+        flex-wrap: wrap;
+        z-index:1000;
+      }
+      
+      .btn-toggle-nav {
+        width:46px;
+        height:100%;
+        background-color: rgb(199, 188, 188);
+        background-image: url("img/turbovector.png");
+        background-repeat: no-repeat;
+        background-size:55%;
+        background-position:center;
+        cursor:pointer;
+      }
+      
+      .btn-toggle-nav:hover {
+        opacity: 0.3;
+      }
+      
+      .nav-main ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 15px;
+      }
+      
+      .nav-main ul li {
+      list-style: none;
+      line-height: 50px;
+      }
+      
+      .nav-main ul li a {
+      display: block;
+      height: 100%;
+      padding: 0 10px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color:#4954bb;
+      font-family: arial;
+      font-size: 16px;
+      }
+      
+      .nav-sidebar ul li span
+       {text-indent: 65px;}
+      
+      
+      .nav-sidebar {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 36px;
+      height: calc(100vh - 50px);
+      padding: 0 5px;
+      background-color: rgba(190, 132, 116, 0.096);
+      z-index: 1000;
+      transition: all 0.3s ease-in-out;
+      }
+      
+      .nav-sidebar ul {
+      padding-top: 15px;
+      overflow: hidden;
+      visibility: hidden;
+      }
+      
+      .nav-sidebar ul li {
+      line-height: 50px;
+      list-style: none;
+      }
+      
+      .nav-sidebar ul li span, .nav-sidebar ul li a {
+      display: block;
+      height: 60px;
+      padding: 0 10px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      font-family: arial;
+      font-size: 16px;
+      white-space: nowrap;
+      opacity:0;
+      transition: all 0.3s ease-in-out;
+      }
+      
+      .nav-sidebar ul li, .nav-sidebar ul li a:hover {
+      background-color: #227;
+      }
+
+/* ----------------------------------------------TOP MENU BAR END ------------------------------------- */
+
+
+
+
+
+
+/*Background   */
+
+
+h3{
+
+height:450px;
+  width:75%;
+  top:160px;
+  left:200px;
+  background-color:rgb(165, 161, 161);
+  position:absolute;
+  opacity: 0.6;
+  cursor: auto;
+}
+
+
+
+
+
+
+/*  SAKURA DRIFT SLAP   */
+
+div.pheader
+{
+top:26%;
+right:28%;
+display:block;
+color:black;
+font-size: 34px;
+position:absolute;
+text-decoration: underline;
+font-weight: bold;
+}
+
+div.price
+{
+top:31.5%;
+right:42%;
+display:block;
+color:black;
+font-size: 18px;
+font-weight:bold;
+position:absolute;
+text-align: left;
+}
+
+
+
+/* top description   */
+
+div.pDescription{
+top:38%;
+right:34%;
+display:block;
+color:black;
+font-size: 17px;
+font-weight:bold;
+position:absolute;
+text-align:left;
+float:left;
+}
+
+div.pDescription2{
+top:54%;
+right:28%;
+display:block;
+color:black;
+font-size: 15px;
+position:absolute;
+text-align: left;
+}
+
+.cartButton {
+  background-color: #4d2ca7;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+
+.cartButton {
+    width: 120px;
+    top:480px;
+    right:530px;
+    position:relative;
+}
+
+
+.numForm{
+  width: 0px;
+    top:515px;
+    right:700px;
+    position:relative;
+}
+
+
+.checkOutFormRetainer {
+    width: 0px;
+    top:0%;
+    right:0%;
+    position:absolute;
+}
+
+
+/* PRODUCT PIC   */
+
+div.productpic {
+  margin: 98px;
+  border: 1px solid #ccc;
+  position:inline-block;
+  float:left;
+  width: 480px;
+  position: absolute;
+  left: 10%;
+  top: 150px;
+}
+
+
+
+div.productpic:hover {
+background-color: rgb(56, 53, 77);
+}
+
+div.productpic img {
+  width: 100%;
+  height: auto;
+  left:600px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* =============================================================================   */
+/* =============================================================================   */
+/* =============================================================================   */
+    
+    
+    
+    </style>
+</head>
+<body>
+    
+  <div class="grid">
+    <div class="content">
+  
+  
+      <div class="nav">
+        <nav class="nav-main">
+          <div class="btn-toggle-nav" onclick="toggleNav()"></div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About US</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </nav>
+  
+        <aside class="nav-sidebar">
+          <ul>
+            <li><span>Royal Items:</span></li>
+            <li><a href="#">Slap Stickers</a></li>
+            <li><a href="#">Window Banners</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Auto Accessories</a></li>
+  
+          </ul>
+        </aside>
+      </div>
+  
+  
+      <!--   -->
+  
+  
+  
+      <!-- transparent background  -->
+      <h3></h3>
+  
+      <!-- PRODUCT PICTURE/DESCRIPTION BOX  -->
+      <div class="productarea">  <!-- this div places the description on the right side  -->
+        <div class="productpic">   
+          <img src="assets/images//sakurafolder/sakurapreview.png" alt="DriftFail!" width="600" height="400">
+          </a>
+          <div class="desc">Will be updating soon!</div>
+        </div>  <!-- productpic div  -->
+  
+        <div class="pheader">Sakura Drift Slap</div>
+  
+        <div class="price">$7.00</div>
+  
+  
+  
+  
+  
+        <!-- STICKER DESCRIPTION AREA  -->
+  
+        <div class="pDescription"><br>
+          -UV Resistant<br>
+          -Fade Resistant<br>
+          -Gloss laminate<br>
+          -Water Proof
+        </div>
+  
+        <div class="pDescription2">The RB26DETT engine is a 2.6 L (2,568 cc) <br>Inline-six engine manufactured by Nissan
+        </div>
+  
+  
+  
+  
+        <!-- AMOUNT SELECTOR AND "ADD TO CART" BUTTON  -->
+        <div class="checkOutFormRetainer">
+  
+          <form action="/action_page.php">
+            <div class="numForm">
+              <input class="quantity" id="id_form-0-quantity" min="0" name="form-0-quantity" value="1" type="number">
+            </div>
+            <button class="cartButton">
+              <input type="submit">
+            </button>
+          </form>
+        </div>
+  
+      </div>
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div class="footer">    <p>Posted by: Andrae Torres</p>
+            <p>Contact information: <a href="mailto:boostedrb240sx@gmail.com">boostedrb240sx@gmail.com</a></p></div>
+
+      </div>
+
+
+</body>
+<script src="javascript/imperialsakura.js"></script>
+</html>

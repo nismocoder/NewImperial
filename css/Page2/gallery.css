@@ -1,0 +1,21 @@
+div.gallery {
+    position: inline;
+    width: 420px;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-image{
+    grid-area: hero-image;
+    background-image: url(../../assets/images/3skylinesFujiCROP.png);
+      background-repeat: no-repeat;
+      background-size: 110%;
+      height: 640px;
+      width: auto;
+      background-position:center 20px;
+      background-attachment: fixed;
+    padding-bottom:20px;
+    }
