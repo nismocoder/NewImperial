@@ -1,0 +1,26 @@
+div.productpic {
+    margin: 98px;
+    border: 1px solid #ccc;
+    position:inline-block;
+    width: 480px;
+    position: absolute;
+    left: 10%;
+    top: 150px;
+  }
+  
+  
+  
+  div.productpic:hover {
+  background-color: rgb(56, 53, 77);
+  }
+  
+  div.productpic img {
+    width: 100%;
+    height: auto;
+    left:600px;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
