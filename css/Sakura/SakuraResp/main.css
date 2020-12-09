@@ -1,7 +1,7 @@
 
 
 
-@media only screen and (max-width:550px) {
+@media only screen and (max-width: 800px) and (min-width: 480px) {
 .grid {
   grid-template-columns: 1fr;
   grid-template-rows:1.0 fr 3.2 fr 1 fr;
@@ -11,6 +11,8 @@
   "footer";
 }
 }
+
+
 
 html,body
 {
