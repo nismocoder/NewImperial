@@ -1,11 +1,11 @@
 div.productpic {
-    margin: 98px;
     border: 1px solid #ccc;
     position:inline-block;
     width: 480px;
     position: absolute;
-    left: 10%;
-    top: 150px;
+    left: 18%;
+    top: 210px;
+ 
   }
   
   
@@ -26,11 +26,12 @@ div.productpic {
   }
 
   @media (max-width: 700px) {
+
     div.productpic {
       margin: auto;
       position:inline-block;
       width: 480px;
-      position: absolute;
+      position: relative;
       left: 0%;
       top: 150px;
     }

@@ -115,22 +115,11 @@ div.pDescription2 {
 }
 
 
-.subGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "subItemLeft subItemRight";
-  grid-gap: 5px;
-}
-
-.subGrid > .subItemLeft .subItemRight {
-  background: salmon;
-  padding: 8px;
-}
 
 
 
-@media (max-width: 700px) {
+
+@media (max-width: 1200px) {
   h3 {
     height: 500px;
     width: 70%;
