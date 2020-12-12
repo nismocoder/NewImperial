@@ -7,11 +7,11 @@ div.productpic {
     top: 210px;
  
   }
-  
+
   
   
   div.productpic:hover {
-  background-color: rgb(56, 53, 77);
+  background-color: rgb(138, 11, 11);
   }
   
   div.productpic img {
@@ -31,14 +31,15 @@ div.productpic {
       margin: auto;
       position:inline-block;
       width: 480px;
-      position: absolute;
+      position: relative;
       left: 0%;
-      top: 150px;
+      top: 170px;
+      border: none;
     }
     
     
     div.productpic:hover {
-    background-color: rgb(56, 53, 77);
+    background-color: rgb(138, 11, 11);
     }
     
     div.productpic img {

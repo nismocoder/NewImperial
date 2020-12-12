@@ -5,7 +5,6 @@ div.productpic {
     position: absolute;
     left: 18%;
     top: 210px;
- 
   }
   
   
@@ -17,7 +16,7 @@ div.productpic {
   div.productpic img {
     width: 100%;
     height: auto;
-    left:600px;
+    left: 600px;
   }
   
   div.desc {
@@ -25,7 +24,7 @@ div.productpic {
     text-align: center;
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 800px) {
 
     div.productpic {
       margin: auto;
@@ -33,7 +32,8 @@ div.productpic {
       width: 480px;
       position: absolute;
       left: 0%;
-      top: 150px;
+      top: 170px;
+      border: none;
     }
     
     
