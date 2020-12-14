@@ -20,7 +20,7 @@
     background: url("../../assets/images/240Z/backgnd.jpg");
     height: 710px;
     width: auto;
-    background-position: center;
+    background-position: center 50px;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;

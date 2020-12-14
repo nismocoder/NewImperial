@@ -17,13 +17,13 @@
   
   .content {
     grid-area: content;
-    background: url("../../assets/images/RPS13Banner/rps2.jpg");
-    height: 780px;
+    background: url("../../assets/images/S13FBanner/13five.jpg");
+    height: 900px;
     width: auto;
-    background-position: center;
+    background-position: center -200px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: scoll;
+    background-attachment: scroll;
   }
   
   h3 {
@@ -31,7 +31,7 @@
     width: 75%;
     top: 19.7%;
     left: 200px;
-    background-color: rgb(212, 206, 206);
+    background-color: white;
     position: absolute;
     opacity: 0.7;
     cursor: auto;
@@ -127,7 +127,7 @@
       width: 70%;
       top: 110px;
       left: 15%;
-      background-color: rgb(212, 206, 206);
+      background-color: white;
       position: absolute;
       opacity: 0.7;
       cursor: default;
