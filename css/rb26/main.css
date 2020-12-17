@@ -33,7 +33,7 @@
     left: 200px;
     background-color: rgb(165, 161, 161);
     position: absolute;
-    opacity: 0.6;
+    opacity: 0.7;
     cursor: auto;
   }
   
@@ -50,7 +50,7 @@
   }
   
   div.price {
-    top: 62%;
+    top: 64%;
     right: 42%;
     display: block;
     color: black;
@@ -63,8 +63,8 @@
   /* top description   */
   
   div.pDescription {
-    top: 36%;
-    right: 32%;
+    top: 35%;
+    right: 31%;
     display: block;
     color: black;
     font-size: 20px;
@@ -75,10 +75,10 @@
   
   div.pDescription2 {
     top: 54%;
-    right: 26%;
+    right: 23%;
     display: block;
     color: black;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: bold;
     position: absolute;
     text-align: left;

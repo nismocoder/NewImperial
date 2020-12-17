@@ -50,7 +50,7 @@
   }
   
   div.price {
-    top: 62%;
+    top: 65%;
     right: 42%;
     display: block;
     color: black;
@@ -64,7 +64,7 @@
   
   div.pDescription {
     top: 36%;
-    right: 32%;
+    right: 31%;
     display: block;
     color: black;
     font-size: 20px;
@@ -74,11 +74,11 @@
   }
   
   div.pDescription2 {
-    top: 54%;
+    top: 55%;
     right: 26%;
     display: block;
     color: black;
-    font-size: 17px;
+    font-size: 22px;
     font-weight: bold;
     position: absolute;
     text-align: left;
@@ -124,9 +124,9 @@
   @media (max-width: 1200px) {
     h3 {
       height: 600px;
-      width: 70%;
-      top: 110px;
-      left: 15%;
+      width: 85%;
+      top: 60px;
+      left: 8%;
       background-color: rgb(172, 170, 170);
       position: absolute;
       opacity: 0.7;
@@ -134,7 +134,7 @@
     }
   
     div.pheader {
-      top: 18%;
+      top: 14%;
       right: 24%;
       display: block;
       color: black;
@@ -144,8 +144,8 @@
       font-weight: bold;
     }
     div.price {
-      top: 90%;
-      left: 40%;
+      top: 84%;
+      left: 38%;
       display: block;
       color: black;
       font-size: 18px;
@@ -155,7 +155,7 @@
     }
     /* top description   */
     div.pDescription {
-      top: 75%;
+      top: 68%;
       right: 40%;
       display: block;
       color: black;
@@ -166,11 +166,11 @@
       float: left;
     }
     div.pDescription2 {
-      top: 70%;
+      top: 65%;
       right: 24%;
       display: block;
       color: black;
-      font-size: 15px;
+      font-size: 18px;
       position: absolute;
       text-align: left;
     }
@@ -200,7 +200,7 @@
     }
   
     .checkOutFormRetainer {
-      top: 83%;
+      top: 76%;
       right: 42%;
       position: absolute;
       width: 200px;

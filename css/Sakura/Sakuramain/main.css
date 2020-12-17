@@ -49,7 +49,7 @@ div.pheader {
 }
 
 div.price {
-  top: 62%;
+  top: 64%;
   right: 42%;
   display: block;
   color: black;
@@ -73,14 +73,14 @@ div.pDescription {
 }
 
 div.pDescription2 {
-  top: 54%;
-  right: 26%;
+  top: 55%;
+  right: 24%;
   display: block;
   color: black;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 21px;
   position: absolute;
-  text-align: left;
+  text-align: center;
 }
 
 .cartButton {

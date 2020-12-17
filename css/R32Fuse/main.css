@@ -39,7 +39,7 @@
   
   div.pheader {
     top: 25%;
-    right: 28%;
+    right: 30%;
     display: block;
     color: black;
     font-size: 34px;
@@ -50,7 +50,7 @@
   }
   
   div.price {
-    top: 62%;
+    top: 65%;
     right: 42%;
     display: block;
     color: black;
@@ -63,7 +63,7 @@
   /* top description   */
   
   div.pDescription {
-    top: 36%;
+    top: 37%;
     right: 32%;
     display: block;
     color: black;
@@ -74,11 +74,11 @@
   }
   
   div.pDescription2 {
-    top: 54%;
-    right: 26%;
+    top: 56%;
+    right: 31%;
     display: block;
     color: black;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: bold;
     position: absolute;
     text-align: left;
@@ -135,7 +135,7 @@
   
     div.pheader {
       top: 18%;
-      right: 15%;
+      right: 28%;
       display: block;
       color: black;
       font-size: 34px;
@@ -167,10 +167,10 @@
     }
     div.pDescription2 {
       top: 70%;
-      right: 24%;
+      right: 32%;
       display: block;
       color: black;
-      font-size: 15px;
+      font-size: 18px;
       position: absolute;
       text-align: left;
     }

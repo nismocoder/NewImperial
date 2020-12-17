@@ -11,7 +11,7 @@ div.productpic {
   
   
   div.productpic:hover {
-  background-color: rgb(56, 53, 77);
+  background-color: none;
   }
   
   div.productpic img {

@@ -1,8 +1,0 @@
-.footer{
-    grid-area: footer;
-       display: flex;
-       background-color:grey;
-       height:50px;
-       display:flex;
-       flex-direction: row;
-}

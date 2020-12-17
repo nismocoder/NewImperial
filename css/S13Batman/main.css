@@ -39,7 +39,7 @@
   
   div.pheader {
     top: 25%;
-    right: 28%;
+    right: 27%;
     display: block;
     color: black;
     font-size: 34px;
@@ -50,8 +50,8 @@
   }
   
   div.price {
-    top: 62%;
-    right: 42%;
+    top: 65%;
+    right: 41%;
     display: block;
     color: black;
     font-size: 18px;
@@ -64,7 +64,7 @@
   
   div.pDescription {
     top: 36%;
-    right: 32%;
+    right: 29%;
     display: block;
     color: black;
     font-size: 20px;
@@ -74,11 +74,11 @@
   }
   
   div.pDescription2 {
-    top: 54%;
-    right: 26%;
+    top: 55%;
+    right: 24%;
     display: block;
     color: black;
-    font-size: 17px;
+    font-size: 21px;
     font-weight: bold;
     position: absolute;
     text-align: left;
@@ -110,7 +110,7 @@
   
   .checkOutFormRetainer {
     top: 65%;
-    right: 33%;
+    right: 31%;
     position: absolute;
     width: 150px;
     height: 50px;
@@ -124,18 +124,18 @@
   @media (max-width: 1200px) {
     h3 {
       height: 600px;
-      width: 70%;
-      top: 110px;
-      left: 15%;
-      background-color: white;
+      width: 85%;
+      top: 60px;
+      left: 8%;
+      background-color: none;
       position: absolute;
       opacity: 0.7;
       cursor: default;
     }
   
     div.pheader {
-      top: 18%;
-      right: 15%;
+      top: 12%;
+      right: 26%;
       display: block;
       color: black;
       font-size: 34px;
@@ -144,8 +144,8 @@
       font-weight: bold;
     }
     div.price {
-      top: 90%;
-      left: 40%;
+      top: 84%;
+      left: 38%;
       display: block;
       color: black;
       font-size: 18px;
@@ -155,8 +155,8 @@
     }
     /* top description   */
     div.pDescription {
-      top: 75%;
-      right: 40%;
+      top: 65%;
+      right: 38%;
       display: block;
       color: black;
       font-size: 17px;
@@ -166,11 +166,11 @@
       float: left;
     }
     div.pDescription2 {
-      top: 70%;
+      top: 60%;
       right: 24%;
       display: block;
       color: black;
-      font-size: 15px;
+      font-size: 18px;
       position: absolute;
       text-align: left;
     }
@@ -200,7 +200,7 @@
     }
   
     .checkOutFormRetainer {
-      top: 83%;
+      top: 76%;
       right: 42%;
       position: absolute;
       width: 200px;

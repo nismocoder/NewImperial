@@ -50,7 +50,7 @@
   }
   
   div.price {
-    top: 62%;
+    top: 64%;
     right: 42%;
     display: block;
     color: black;
@@ -64,7 +64,7 @@
   
   div.pDescription {
     top: 36%;
-    right: 32%;
+    right: 30%;
     display: block;
     color: black;
     font-size: 20px;
@@ -78,9 +78,9 @@
     right: 26%;
     display: block;
     color: black;
-    font-size: 17px;
+    font-size: 20px;
     position: absolute;
-    text-align: left;
+    text-align: center;
     font-weight: bold;
   }
   

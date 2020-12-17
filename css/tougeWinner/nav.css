@@ -9,7 +9,7 @@
     height: 50px;
     top:0;
     position:fixed;
-    background-color: #fff;
+    background-color: #4d2ca7;
     display:flex;
     flex-wrap: wrap;
     z-index:1000;
@@ -47,7 +47,7 @@
   padding: 0 10px;
   text-transform: uppercase;
   text-decoration: none;
-  color:#4954bb;
+  color:white;
   font-family: arial;
   font-size: 16px;
   }

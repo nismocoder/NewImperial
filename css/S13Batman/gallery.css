@@ -11,7 +11,7 @@ div.productpic {
   
   
   div.productpic:hover {
-  background-color: rgb(177, 165, 165);
+  background-color: none;
   }
   
   div.productpic img {
@@ -40,7 +40,7 @@ div.productpic {
     
     
     div.productpic:hover {
-    background-color: rgb(177, 165, 165);
+    background-color: none;
     }
     
     div.productpic img {
