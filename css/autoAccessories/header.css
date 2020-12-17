@@ -5,6 +5,7 @@ div.slapheader {
     flex-flow: row;
     justify-content: space-evenly;
     align-content: space-between;
+    padding-top: 10px;
 }
 
 div.slapheader p {
