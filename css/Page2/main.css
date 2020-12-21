@@ -33,15 +33,14 @@
     flex-direction: column;
     flex-flow: column;
     justify-content: flex-start;
-    
 }
 
 .flexContainterRight {
     width: 100%;
     height: auto;
     background-color: #ccc;
-    display: flex;
-    flex-wrap: wrap;
+    display: inline-flex;
+    flex-wrap: nowrap;
     flex-direction: column;
     flex-flow: column;
     justify-content: space-evenly;
