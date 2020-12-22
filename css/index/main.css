@@ -6,6 +6,7 @@
       grid-template-areas:
       "nav nav"
       "content content"
+      "contentheader contentheader"
       "content2 content2"
       "footer footer";
 }
@@ -17,6 +18,7 @@
     grid-template-areas:
     "nav"
     "content"
+    "contentheader"
     "content2"
     "footer";
   }
@@ -86,16 +88,35 @@
   }
   
 
+
+.contentheader {
+  grid-area: contentheader;
+  display: inline;
+  font-family: Impact, sans-serif;
+  background-color: rgb(238, 226, 226);
+  text-align: center;
+  color: rgb(62, 62, 247);
+  position: relative;
+  font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 200px;
+  text-decoration: underline;
+}
+
+
+
   .content2 {
       grid-area: content2;
       display: flex;
       justify-content: center;
+      background-color:  rgb(238, 226, 226);
   }
+
 
   .fgallery {
     width: 100%;
     height: auto;
-    background-color: #ccc;
+    background-color:  rgb(238, 226, 226);
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
