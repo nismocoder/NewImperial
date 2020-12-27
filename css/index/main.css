@@ -8,6 +8,7 @@
       "content content"
       "contentheader contentheader"
       "content2 content2"
+      "newsLetter newsLetter"
       "footer footer";
 }
 
@@ -20,6 +21,7 @@
     "content"
     "contentheader"
     "content2"
+    "newsLetter"
     "footer";
   }
 }
@@ -88,19 +90,7 @@
   
 
 
-.contentheader {
-  grid-area: contentheader;
-  display: inline;
-  font-family: Impact, sans-serif;
-  background-color: rgb(238, 226, 226);
-  text-align: center;
-  color: rgb(62, 62, 247);
-  position: relative;
-  font-size: 40px;
-  padding-top: 20px;
-  padding-bottom: 200px;
-  text-decoration: underline;
-}
+
 
 
 
@@ -108,32 +98,31 @@
       grid-area: content2;
       display: flex;
       justify-content: center;
-      background-color:  rgb(238, 226, 226);
+      background-color:  rgb(248, 241, 241);
+      justify-content: center;
   }
 
 
   .fgallery {
     width: 100%;
     height: auto;
-    background-color:  rgb(238, 226, 226);
+    background-color:  rgb(248, 241, 241);
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     flex-flow: row;
-    justify-content: center;
 }
 
 .fgallery img {
   width: 75%;
   height: auto;
   display: inline;
-  justify-content: center;
 }
 
 .fgallery ul {
   display: flex;
   justify-content: space-evenly;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
 }
 
 .fgallery li {
@@ -144,3 +133,98 @@
   flex-flow: row;
   padding-left: 80px;
 }
+
+
+
+
+.newsLetter {
+  grid-area: newsLetter;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color:  rgb(223, 219, 219);
+  height: 280px;
+  width: 100%;
+  position: relative;
+}
+
+.NLupper {
+margin: auto;
+font-size: 28px;
+position: absolute;
+top: 45px;
+left: 40%
+}
+
+
+.NLmid {
+  font-size: 20px;
+  margin: auto;
+  position: absolute;
+  top: 96px;
+  left: 35%
+}
+
+.NLmid {
+  border-bottom: 1px solid;
+  padding-bottom: 30px;
+}
+
+
+
+.search-container button {    
+  top: 51px;
+  left: 56%;
+  width: 100px;     
+  padding: 6px 10px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  display:inline-block;
+  background-image: url("../../img/turbovector.png");
+}
+
+.search-container li input {
+  display: inline-block;
+  position: relative;
+  top: 50px;
+  left:32%;
+  display:inline;
+  width:16%;
+  height: 30px;
+}      
+
+.search-container button:hover {
+  background: #ccc;
+}
+
+.search-container ul {
+  padding-top:20px;
+  width: 20px;
+}
+
+     
+
+
+
+
+/*
+
+
+.input {
+  width: 200px;
+  height: 30px;
+  top: 50px;
+  left:35%;
+}
+  */
+
+
+
+
+
+
+
+
