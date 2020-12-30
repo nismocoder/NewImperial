@@ -1,42 +1,45 @@
 .footer{
   grid-area: footer;
-     display: inline-block;
      background-color:rgb(248, 241, 241);
      height: 160px;
      display:flex;
      flex-direction: row;
      position: relative;
+     justify-content: space-around;
+     align-items: center;
 }
 
-.SocialContainer {
+/* ----------------------------------- */
+
+.footerItem-SocialContainer {
 position: relative;
-width: 300px;
-left: 100px;
-top: 30px;
 height: 100px;
+width: 260px;
+padding-left: 50px;
+align-items: center;
+justify-content: center;
 }
 
-.footer p {
-  left: 60px;
-  position: relative;
-  top: 0px;
+.footerItem-SocialContainer p {
+  text-align: center;
   font-size: 25px;
   font-family: Karla,sans-serif;
   padding-bottom: 15px;
 }
 
 .fa {
-  position: relative;
-  bottom: 0px;
   padding: 20px;
   font-size: 30px;
   width: 20px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
-  left: 10px;
+  justify-content: center;
 }
 
+.footerItem-SocialContainer a {
+  justify-content: center;
+}
 
 .fa:hover {
   opacity: 0.7;
@@ -47,8 +50,6 @@ height: 100px;
 .fa-facebook {
   background: #3B5998;
   color: white;
-  bottom: 0px;
-  position: relative;
 }
 
 
@@ -60,65 +61,61 @@ height: 100px;
 .fa-instagram {
   background: #c041a0;
   color: white;
-  bottom: 0px;
-  position: relative;
 }
 
 .fa-youtube {
   background: rgb(204, 0, 0);
   color: white;
-  bottom: 0px;
-  position: relative;
 }
 
+/* ----------------------------------- */
 
 .icon-container {
-  position: relative;
-  top: 15px;
-  right: 15px;
   margin-bottom: 20px;
-  padding: 10px 0;
+  padding: 2px 0;
   font-size: 26px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
 }
 
-.payment {
-  display: inline-block;
-  position: relative;
-  left: 850px;
-  top: 26px;
-  height: 100px;
-  width: 275px;
+
+.footerItem-payment {
+  height: 78px;
+  width: 300px;
+  justify-content: center;
 }
 
-.payment label {
-  left: 70px;
-  top: 25px;
-  position: relative;
+.footerItem-payment p {
+  font-family: Karla,sans-serif;
+  text-align: center;
+}
+
+/* ----------------------------------- */
+
+.footerItem-footerLinks {
+  height: 80px;
+  width: 100px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 22px;
+  text-align: center;
   font-family: Karla,sans-serif;
 }
 
-.footerLinks {
-  position: relative;
-  display: inline-block;
-  left: 345px;
-  top: 45px;
-  height: 50px;
-  width: 0px;
-}
-
 .footerLinks ul {
-  position: relative;
-  display: flex;
-  left: 0px;
-  top: 28px;
   height: 50px;
-  width: 280px;
+  width: 200px;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .footerLinks ul li {
   padding-left: 15px;
   font-family: Karla,sans-serif;
   font-size: 20px;
+  flex-direction: row;
 }
 
 .footerLinks ul li a {

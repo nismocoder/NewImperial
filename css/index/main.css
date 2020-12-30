@@ -29,7 +29,7 @@
 
 
   
-  .content {
+  .hero {
   grid-area: content;
   display: flex;
   justify-content:center;
