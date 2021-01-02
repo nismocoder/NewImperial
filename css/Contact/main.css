@@ -1,0 +1,67 @@
+.container {
+    display:grid;
+    height:100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+      grid-template-areas:
+      "nav nav"
+      "hero hero"
+      "content content"
+      "footer footer";
+}
+
+.content {
+    grid-area: content;
+    display: flex;
+    justify-content: center;
+    background-color:  rgb(196, 196, 196);
+    align-items: center;
+    margin-top: -20px;
+}
+
+.contact_form {
+    display: flex;
+    height: 210px;
+    justify-content: center;
+    align-items: center;
+}
+
+.eightcolumns {
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+
+.contact_content {
+    text-transform: none;
+    color: #280000;
+    -webkit-box-direction: normal;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    margin-bottom: 0;
+}
+
+--------------------------
+
+text-transform: none;
+color: #280000;
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+padding-top: 0.75em;
+display: flex;
+-webkit-box-pack: justify;
+justify-content: space-between;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+flex-direction: column;
+-webkit-box-align: center;
+align-items: center;
+margin-bottom: 50px;
