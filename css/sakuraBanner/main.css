@@ -17,7 +17,7 @@
   
   .content {
     grid-area: content;
-    background: url("../../assets/images/sakuraBanner/castle.jpg");
+    background: url("../../assets/images/sakuraBanner/compressjpeg/castle-min.jpg");
     height: 780px;
     width: auto;
     background-position: center;

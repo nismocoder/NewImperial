@@ -10,7 +10,7 @@ div.gallery img {
 
 .hero-image{
     grid-area: hero-image;
-    background-image: url("../../assets/images/3skylinesFujiCROP.png");
+    background-image: url("../../assets/images/compresspng/3skylinesFujiCROP-min.png");
       background-repeat: no-repeat;
       background-size: 110%;
       height: 640px;
