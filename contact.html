@@ -1,5 +1,4 @@
-
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -56,37 +55,30 @@
 
 
     <div class="content">
-        <div class="contact_form">
-            <div class="
-                contact_content">
-              
+      <div class="form">
+        <div class="contact-form">
+          <form action="index.html">
+            <h3 class="title">Contact Us</h3>
+    
+            <div class="input-container">
+              <input type="email" name="email" class="input">
+              <label for="">Email</label>
             </div>
-            <div class="eightcolumns">
-              <form method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8" class="contact-form"><input type="hidden" name="form_type" value="contact"><input type="hidden" name="utf8" value="✓">
-                
-        
-                
-        
-                 <div class="four columns alpha">
-                  
-                  <label for="contactFormName">Name <span class="red">*</span></label>
-                  <input type="text" id="contactFormName" name="contact[contact-form-name]" placeholder="Name" autocapitalize="words" value="" required="required">
-                 </div>
-                 <div class="four columns omega">
-                  <label for="contactFormEmail">Email <span class="red">*</span></label>
-                  <input type="email" id="contactFormEmail" name="contact[email]" placeholder="Email" autocorrect="off" autocapitalize="off" value="" required="required">
-                 </div>
-                 
-        
-                <label for="contactFormMessage">Message <span class="red">*</span></label>
-                <textarea rows="5" id="contactFormMessage" name="contact[body]" placeholder="Message" required="required"></textarea>
-        
-                
-        
-                <input type="submit" class="submit action_button" value="Send">
-              </form>
+    
+            <div class="input-container">
+              <input type="tel" name="phone" class="input">
+              <label for="">Phone</label>
             </div>
-          </div>
+    
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Message</label>
+            </div>
+            <input type="submit" value="Send" class="btn">
+    
+          </form>
+        </div> <!-- contact-form  -->
+      </div>
     </div> <!-- content  -->
 
 
