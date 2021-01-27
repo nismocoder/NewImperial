@@ -1,5 +1,6 @@
 let toggleNavStatus = false;
 
+
 let toggleNav = function() {
      let getSidebar = document.querySelector(".nav-sidebar");
      let getSidebarUl = document.querySelector(".nav-sidebar ul");
@@ -33,3 +34,27 @@ let toggleNav = function() {
         toggleNavStatus = false;
     }
 }
+
+
+
+
+let tl = gsap.timeline()
+tl.fromTo('.enterButton', {
+    x: -1300,
+    opactity: 0,
+},{
+    x: 0,
+    opactiy: 1,
+    delay: .3,
+    duration: 1
+}
+)
+.fromTo('.logo', {
+    opacity: 0,
+},{
+    opacity: .5,
+    ease: "power2.inOut",
+    duration: .7, x: 1, ease: "steps(4)",
+}
+
+);
