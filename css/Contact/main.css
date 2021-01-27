@@ -114,7 +114,7 @@ input-container label {
     border-radius: 25px;
     outline: none;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.5s ease-in-out;
 }
 
 .btn:hover {

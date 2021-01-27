@@ -3,14 +3,22 @@
     height: 100vh;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "nav nav" "hero-image hero-image" "content content" "footer footer";
+    grid-template-areas: 
+        "nav nav"
+        "hero-image hero-image"
+        "content content" 
+        "footer footer";
 }
 
 @media only screen and (max-width:550px) {
     .container {
         grid-template-columns: 1fr;
         grid-template-rows: 1.0 fr 1.0 fr 2.2 fr 1 fr;
-        grid-template-areas: "nav" "hero-image" "content" "footer";
+        grid-template-areas: 
+        "nav" 
+        "hero-image" 
+        "content" 
+        "footer";
     }
 }
 
