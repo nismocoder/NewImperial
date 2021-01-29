@@ -39,22 +39,22 @@ let toggleNav = function() {
 
 
 let tl = gsap.timeline()
+.fromTo('.logo', {
+    opacity: 0,
+},{
+    opacity: .5,
+    ease: "power2.inOut",
+    duration: .7, x: 1, ease: "steps(5)",
+}
+
+)
 tl.fromTo('.enterButton', {
     x: -1300,
     opactity: 0,
 },{
     x: 0,
     opactiy: 1,
-    delay: .3,
-    duration: 1
+    delay: 0,
+    duration: .4
 }
-)
-.fromTo('.logo', {
-    opacity: 0,
-},{
-    opacity: .5,
-    ease: "power2.inOut",
-    duration: .7, x: 1, ease: "steps(4)",
-}
-
 );
