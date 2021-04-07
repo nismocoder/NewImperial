@@ -4,6 +4,7 @@
 
 .nav-main {
   width: 98.9%;
+  /* width: 100vw; */
   height: 50px;
   top: 0;
   position: fixed;
@@ -22,6 +23,7 @@
   background-size: 55%;
   background-position: center;
   cursor: pointer;
+  left: 0;
 }
 
 .btn-toggle-nav:hover {
@@ -95,4 +97,25 @@
 
 .nav-sidebar ul li, .nav-sidebar ul li a:hover {
   background-color: #227;
+}
+
+
+/* -------------------------- mediaQ --------------------------*/
+/* ------------------------------------------------------------*/
+
+@media only screen and (max-width:550px) {
+  .nav {
+    grid-area: nav;
+  }
+  
+  .nav-main {
+    width: 100vw;
+    height: 50px;
+    top: 0;
+    position: fixed;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 2000;
+  }
 }

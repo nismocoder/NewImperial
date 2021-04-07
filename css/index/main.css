@@ -12,37 +12,6 @@
       "footer footer";
 }
 
-@media only screen and (max-width:550px) {
-  .container {
-    grid-template-columns: 1fr;
-    grid-template-rows:1.0 fr 2.2 fr 1 fr;
-    grid-template-areas:
-    "nav"
-    "content"
-    "contentheader"
-    "content2"
-    "newsLetter"
-    "footer";
-  }
-}
-
-
-
-  
-  .hero {
-  grid-area: content;
-  display: flex;
-  justify-content:center;
-  padding-top:5px;
-  background: url(../../img/3skylines.jpg);
-    height: 800px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-  }
-
 
   
   .enterButton{
@@ -215,19 +184,213 @@ left: 40%
 
      
 
+/* -------------------------- mediaQ --------------------------*/
+/* ------------------------------------------------------------*/
 
+@media only screen and (max-width:550px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows:1.0 fr 2.2 fr 1 fr;
+    grid-template-areas:
+    "nav"
+    "content"
+    "contentheader"
+    "content2"
+    "newsLetter"
+    "footer";
+  }
 
+  .enterButton{
+    background-color:rgb(62, 62, 247);
+    border:clear;
+    height:40px;
+    width:130px;
+    text-align: center;
+    color:white;
+    padding: 5px 10px;
+    font-size:20px;
+    position: absolute;
+    right:32%;
+    top:50%;
+    display:flex;
+    cursor: pointer;
+    transition-duration: 0.8s;
+    border-radius: 15px;
+    z-index: 2000;
+    justify-content: center;
+  }
+  
+  .enterButton a:link {
+    color:white;
+    background-color:transparent;
+    text-decoration: underline;
+    justify-content: center;
+    text-align: center;
+  }
+  .enterButton a:visited {
+    color:white;
+    background-color: transparent;
+    text-decoration: none;
+  }
 
-/*
+  .enterButton a:hover {
+    transition: 0.6s ease-in-out;
+    color:rgb(255, 0, 0);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .enterButton a:active {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  .enterButton:hover {
+    background-color: rgb(0, 201, 201);
+  }
 
+/* ------------------------------------------------------------*/
 
-.input {
-  width: 200px;
-  height: 30px;
-  top: 50px;
-  left:35%;
+  .content2 {
+    grid-area: content2;
+    display: flex;
+    justify-content: center;
+    background-color:  rgb(248, 241, 241);
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
 }
-  */
+
+  .fgallery {
+    width: 100vw;
+    height: 100vh;
+    background-color:  rgb(248, 241, 241);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-flow: column;
+}
+
+.fgallery img {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.fgallery ul {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  padding-bottom: 60px;
+  position: relative;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.fgallery ul li {
+  display: flex;
+  width: 100vw;
+  height: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-left: 0;
+}
+
+.fgallery ul li a img {
+  display: flex;
+  width: 100vw;
+  height: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column; 
+}
+
+/* ------------------------------------------------------------*/
+
+.newsLetter {
+  grid-area: newsLetter;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color:  rgb(223, 219, 219);
+  height: 45vh;
+  width: 100vw;
+  position: relative;
+}
+
+.NLupper {
+display: flex;
+margin: 0;
+/* margin: auto; */
+font-size: 20px;
+position: relative;
+justify-content: center;
+top: 1%;
+width: 100vw;
+height: 100%;
+}
+
+
+.NLmid {
+  display: flex;
+  font-size: 15px;
+  margin: 0;
+  /* margin: auto; */
+  position: relative;
+  top: 25%;
+  left: 2%;
+}
+
+.NLmid {
+  border-bottom: 1px solid;
+  padding-bottom: 32px;
+}
+
+
+
+.search-container button {    
+  top: 61px;
+  left: 56%;
+  width: 100px;     
+  padding: 6px 10px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  display:inline-block;
+  background-color: black;
+  color:rgb(248, 241, 241);
+  transition: 0.6s ease-in-out;
+}
+
+.search-container li input {
+  display: inline-block;
+  position: relative;
+  top: 60px;
+  left:32%;
+  display:inline;
+  width:16%;
+  height: 30px;
+}      
+
+.search-container button:hover {
+  background: rgb(153, 153, 153);
+  transition: 0.5s ease-in-out;
+}
+
+.search-container ul {
+  padding-top:20px;
+  width: 20px;
+}
+
+}
+/* -------------------------- mediaQ END --------------------------*/
+
+
 
 
 
