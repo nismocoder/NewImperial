@@ -28,7 +28,7 @@ div.productpic {
 
   @media (max-width: 700px) {
 
-    div.productpic {
+    /* div.productpic {
       margin: auto;
       position:inline-block;
       width: 480px;
@@ -36,17 +36,40 @@ div.productpic {
       left: 0%;
       top: 170px;
       border: none;
+    } */
+
+    /* .subItemLeft {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      width: 100vw;
+      height: 75vh;
+      top: 0;
+    }
+
+    div.productpic {
+      display: flex;
+      margin: auto;
+      position: relative;
+      width: 100vw;
+      height: 35vh;
+      position: relative;
+      justify-content: center;
+      top: 0px;
+      border: none;
     }
     
+  
     
     div.productpic:hover {
     background-color: none;
     }
     
     div.productpic img {
-      width: 100%;
+      display: flex;
+      width: 100vw;
       height: auto;
-      left:600px;
+      position: relative;
     }
     
     div.desc {
@@ -54,4 +77,4 @@ div.productpic {
       padding: 15px;
       text-align: center;
     }
-  }
+  } */

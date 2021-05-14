@@ -121,17 +121,21 @@
   
   
   
-  @media (max-width: 1200px) {
-    h3 {
+  @media (max-width: 700px) {
+    /* h3 {
       height: 600px;
       width: 70%;
       top: 110px;
       left: 15%;
       background-color: white;
-      position: absolute;
+      position: relative;
       opacity: 0.7;
       cursor: default;
-    }
+        }
+
+        h3:hover {
+          cursor: scroll;
+        }
   
     div.pheader {
       top: 18%;
@@ -205,5 +209,5 @@
       position: absolute;
       width: 200px;
       height: 80px;
-    }
+    } */
   }
