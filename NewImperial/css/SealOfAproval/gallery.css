@@ -1,0 +1,55 @@
+div.productpic {
+    border: 1px solid #ccc;
+    position:inline-block;
+    width: 480px;
+    position: absolute;
+    left: 18%;
+    top: 210px;
+  }
+  
+  
+  
+  div.productpic:hover {
+  background-color: rgb(56, 53, 77);
+  }
+  
+  div.productpic img {
+    width: 100%;
+    height: auto;
+    left: 600px;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+  @media (max-width: 800px) {
+
+    div.productpic {
+      margin: auto;
+      position:inline-block;
+      width: 480px;
+      position: absolute;
+      left: 0%;
+      top: 170px;
+      border: none;
+    }
+    
+    
+    div.productpic:hover {
+    background-color: rgb(56, 53, 77);
+    }
+    
+    div.productpic img {
+      width: 100%;
+      height: auto;
+      left:600px;
+    }
+    
+    div.desc {
+      display:none;
+      padding: 15px;
+      text-align: center;
+    }
+  }

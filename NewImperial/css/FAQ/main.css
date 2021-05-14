@@ -1,0 +1,36 @@
+
+
+p ul li {
+    list-style-type: circle;
+}
+
+p {
+    list-style-type: circle;
+  }
+
+  li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+
+
+p ul {
+    list-style-type: circle;
+  }
+
+
+
+
+
+
+
+
+
+  .description {
+      padding-top: 80px;
+      background-color: rgb(184, 184, 184);
+      height: 1000px;
+      font-size: 18px;
+      line-height: 1.2;
+  }

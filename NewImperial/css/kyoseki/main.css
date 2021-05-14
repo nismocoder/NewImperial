@@ -1,0 +1,209 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "nav nav"
+                         "content content" 
+                         "footer footer";
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+  
+  .content {
+    grid-area: content;
+    background: url("../../assets/images/kyoseki/kyoseki.jpg");
+    height: 780px;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  h3 {
+    height: 450px;
+    width: 75%;
+    top: 19.7%;
+    left: 200px;
+    background-color: white;
+    position: absolute;
+    opacity: 0.6;
+    cursor: auto;
+  }
+  
+  div.pheader {
+    top: 25%;
+    right: 28%;
+    display: block;
+    color: black;
+    font-size: 34px;
+    position: absolute;
+    text-decoration: underline;
+    font-weight: bold;
+    text-align:center;
+  }
+  
+  div.price {
+    top: 64%;
+    right: 42%;
+    display: block;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    text-align: left;
+  }
+  
+  /* top description   */
+  
+  div.pDescription {
+    top: 35%;
+    right: 31%;
+    display: block;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    text-align: left;
+  }
+  
+  div.pDescription2 {
+    top: 55%;
+    right: 25%;
+    display: block;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    text-align: left;
+  }
+  
+  .cartButton {
+    background-color: #4d2ca7;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    left: 100%;
+    top: 10%;
+    position: absolute;
+    width: 120px;
+  }
+  
+  .numForm {
+    width: 80px;
+    top: 35%;
+    right: 80%;
+    position: absolute;
+  }
+  
+  .checkOutFormRetainer {
+    top: 65%;
+    right: 33%;
+    position: absolute;
+    width: 150px;
+    height: 50px;
+  }
+  
+
+  
+  
+  
+  
+  @media (max-width: 1200px) {
+    h3 {
+      height: 500px;
+      width: 70%;
+      top: 110px;
+      left: 15%;
+      background-color: white;
+      position: absolute;
+      opacity: 0.7;
+      cursor: default;
+    }
+  
+    div.pheader {
+      top: 18%;
+      right: 24%;
+      display: block;
+      color: black;
+      font-size: 34px;
+      position: absolute;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+    div.price {
+      top: 77%;
+      left: 40%;
+      display: block;
+      color: black;
+      font-size: 18px;
+      font-weight: bold;
+      position: absolute;
+      text-align: left;
+    }
+    /* top description   */
+    div.pDescription {
+      top: 62%;
+      right: 40%;
+      display: block;
+      color: black;
+      font-size: 17px;
+      font-weight: bold;
+      position: absolute;
+      text-align: left;
+      float: left;
+    }
+    div.pDescription2 {
+      top: 56%;
+      right: 24%;
+      display: block;
+      color: black;
+      font-size: 15px;
+      position: absolute;
+      text-align: left;
+    }
+    .cartButton {
+      background-color: #4d2ca7;
+      border: none;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 2px 2px;
+      cursor: pointer;
+    }
+    .cartButton {
+      width: 120px;
+      top: 75%;
+      right: 13%;
+      position: absolute;
+    }
+    .numForm {
+      width: 70px;
+      top: 87%;
+      left: 15%;
+      position: absolute;
+    }
+  
+    .checkOutFormRetainer {
+      top: 70%;
+      right: 42%;
+      position: absolute;
+      width: 200px;
+      height: 80px;
+    }
+  }

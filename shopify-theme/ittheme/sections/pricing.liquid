@@ -1,0 +1,170 @@
+<div class="container">
+  <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h1 class="display-4">{{section.settings.title}} {{ settings.color_text }}</h1>
+      <p class="lead">{{section.settings.Description}}</p>
+    </div>
+    
+  <div class="card-deck mb-3 text-center">
+     {% for block in section.blocks %}
+     {% assign description_list = block.settings.tier_description | split:", " %}
+    <div class="card mb-4 box-shadow">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">{{ block.settings.tier_name }}</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">${{ block.settings.tier_price }}<small class="text-muted">/{{ block.settings.tier_date }}</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          {% for item in description_list %}
+          <li>{{item}}</li>
+            {% endfor %}
+        </ul>
+        <a href="{{block.settings.tier_button_link}}" class="btn btn-lg btn-block 
+        {% if block.settings.tier_button_style == "outline" %}
+        btn-outline-primary
+        {% else %}
+        btn-primary
+        {% endif %}">{{block.settings.tier_button_text}}</a>
+      </div>
+</div>
+{% endfor %}
+</div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Pricing",
+  "class": "section-pricing",
+  "tag": "section",
+  "settings": [
+    {
+      "id": "title",
+      "type": "text",
+      "label": "Title",
+      "default": "Pricing"
+    },
+    {
+      "id": "Description",
+      "type": "textarea",
+      "label": "Section Description",
+      "default": "Quickly build an effective pricing table for your potential customers with this, ENJOY!"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tier",
+      "name": "Tier",
+      "limit": 4,
+      "settings": [
+        {
+          "id": "tier_name",
+          "type": "text",
+          "label": "Tier Name",
+          "default": "Free"
+        },
+        {
+          "id": "tier_price",
+          "type": "text",
+          "label": "Tier Price",
+          "default": "0"
+        },
+        {
+          "id": "tier_date",
+          "type": "select",
+          "label": "Tier Date",
+          "options": [
+            {
+              "value": "dy",
+              "label": "Daily"
+            },
+            {
+              "value": "mo",
+              "label": "Monthly"
+            },
+            {
+              "value": "yr",
+              "label": "Yearly"
+            }
+          ],
+          "default": "mo"
+        },
+        {
+          "id": "tier_description",
+          "type": "textarea",
+          "label": "Tier description",
+          "info": "Seperate by Comma",
+          "default": "10 Users Included, 2 GB of Storage,Email Support, Help Center access",
+          "placeholder": "example a, example b, example c"
+        },
+        {
+          "id": "tier_button_style",
+          "type": "select",
+          "label": "Button Style",
+          "options": [
+            {
+              "value": "outline",
+              "label": "outline"
+            },
+            {
+              "value": "filled",
+              "label": "filled"
+            }
+          ],
+          "default": "outline"
+        },
+        {
+          "id": "tier_button_text",
+          "type": "text",
+          "label": "Button Text",
+          "default": "Sign up"
+        },
+        {
+          "id": "tier_button_link",
+          "type": "text",
+          "label": "Tier Link URL",
+          "default": "#"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Custom Component",
+      "name": "Pricing",
+      "settings": {
+        "title": "Pricing",
+        "Description": "Quickly build an effective pricing table for your potential customers with this, ENJOY!"
+      },
+      "blocks": [
+        {
+          "type": "tier",
+          "settings": {
+            "tier_name": "Free",
+                "tier_price": "0",
+            "tier_date": "mo",
+            "tier_button_style": "outline"
+          }
+        },
+        {
+          "type": "tier",
+          "settings": {
+            "tier_name": "Monthly",
+            "tier_price": "25",
+            "tier_date": "mo",
+            "tier_button_style": "filled"
+          }
+        },
+        {
+          "type": "tier",
+          "settings": {
+            "tier_name": "Yearly",
+                "tier_price": "16",
+            "tier_date": "yr",
+            "tier_button_style": "filled"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

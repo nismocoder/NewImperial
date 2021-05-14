@@ -1,0 +1,27 @@
+.container {
+    display:grid;
+    height:100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+      grid-template-areas:
+      "nav nav"
+      "hero hero"
+      "header header"
+      "content content"
+      "footer footer";
+}
+
+.content {
+    grid-area: content;
+    display: flex;
+    justify-content: center;
+    background-color:  rgb(196, 196, 196);
+    align-items: center;
+    margin-top: 0px;
+    height: 240px;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+
+
